@@ -22,7 +22,8 @@ Colors indicate the following:
 * Black - censored
 * White - uncensored
 * Red   - adversary
-* Gray  - blocked
+* Gray  - uncensored + blocked
+* Green - censored + access
 
 Numbers: 
 
