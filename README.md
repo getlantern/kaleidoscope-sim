@@ -32,6 +32,28 @@ Numbers:
 * Uncensored nodes (m/n) indicates unique/total nodes reached by advertisements
 * Censored nodes m - indicates the number of nodes discovered via advertisements
 
+
+Status
+======
+
+This simulator is mainly experimental and rough on all edges.
+
+Quickstart
+==========
+
+You will likely need to install the kaleidoscope library by hand and run this from your favorite IDE for the time being.  
+
+The kaleidoscope library can be found at https://github.com/getlantern/kaleidoscope
+
+Try the following: 
+
+   git clone git://github.com/getlantern/kaleidoscope.git
+   git clone git://github.com/getlantern/kaleidoscope-sim.git
+   cd kaleidoscope
+   mvn install
+   cd ../kaleidoscope-sim
+   mvn package && java -jar target/sim-1.0-SNAPSHOT-jar-with-dependencies.jar
+
 License 
 =======
 
