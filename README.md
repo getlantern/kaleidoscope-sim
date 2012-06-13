@@ -19,15 +19,15 @@ Click the nodes to change their type.
 
 Colors indicate the following:
 
-Black - censored
-White - uncensored
-Red   - adversary
-Gray  - blocked
+* Black - censored
+* White - uncensored
+* Red   - adversary
+* Gray  - blocked
 
 Numbers: 
 
-Uncensored nodes (m/n) indicates unique/total nodes reached by advertisements
-Censored nodes m - indicates the number of nodes discovered via advertisements
+* Uncensored nodes (m/n) indicates unique/total nodes reached by advertisements
+* Censored nodes m - indicates the number of nodes discovered via advertisements
 
 License 
 =======
