@@ -8,7 +8,7 @@ library](https://github.com/getlantern/kaleidoscope).
 
 
 Quick Explanation
-=================
+-----------------
 
 The sim will generate a small random social-network-like graph using the 
 method outlined in: 
@@ -34,28 +34,28 @@ Numbers:
 
 
 Status
-======
+------
 
 This simulator is mainly experimental and rough on all edges.
 
 Quickstart
-==========
+----------
 
 You will likely need to install the kaleidoscope library by hand and run this from your favorite IDE for the time being.  
 
 The kaleidoscope library can be found at https://github.com/getlantern/kaleidoscope
 
-Try the following: 
+Try the following:
 
-   git clone git://github.com/getlantern/kaleidoscope.git
-   git clone git://github.com/getlantern/kaleidoscope-sim.git
-   cd kaleidoscope
-   mvn install
-   cd ../kaleidoscope-sim
-   mvn package && java -jar target/sim-1.0-SNAPSHOT-jar-with-dependencies.jar
+    git clone git://github.com/getlantern/kaleidoscope.git
+    git clone git://github.com/getlantern/kaleidoscope-sim.git
+    cd kaleidoscope
+    mvn install
+    cd ../kaleidoscope-sim
+    mvn package && java -jar target/sim-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-License 
-=======
+License
+-------
 
 This library is licensed under an MIT style license. 
 Complete license details can be found in the included LICENSE document.
