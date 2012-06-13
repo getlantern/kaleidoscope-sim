@@ -1,8 +1,10 @@
-
 Kaleidoscope Simulator
 ======================
 
-This is a quick and dirty simulator for the Kaleidoscope library.
+This is a quick and dirty simulator for the [Kaleidoscope
+library](https://github.com/getlantern/kaleidoscope).
+
+![screenshot](http://i.imgur.com/xe3wv.png)
 
 
 Quick Explanation
@@ -34,4 +36,3 @@ License
 
 This library is licensed under an MIT style license. 
 Complete license details can be found in the included LICENSE document.
-
