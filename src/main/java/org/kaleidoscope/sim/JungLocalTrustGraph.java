@@ -2,11 +2,11 @@ package org.kaleidoscope.sim;
 
 import java.awt.Color;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.kaleidoscope.BasicTrustGraphAdvertisement;
 import org.kaleidoscope.BasicTrustGraphNodeId;
 import org.kaleidoscope.TrustGraphAdvertisement;
 import org.kaleidoscope.TrustGraphNodeId;
@@ -105,8 +105,8 @@ class JungLocalTrustGraph extends LocalTrustGraph {
         @Override
         public void handleAdvertisement(TrustGraphAdvertisement message) {
             // extract node id from message payload
-            LocalTrustGraph.LocalAdvertisement m =
-                    (LocalTrustGraph.LocalAdvertisement) message;
+            BasicTrustGraphAdvertisement m =
+                    (BasicTrustGraphAdvertisement) message;
             TrustGraphNodeId nodeId = new BasicTrustGraphNodeId(m.getPayload());
             JungLocalTrustGraphNode node =
                     (JungLocalTrustGraphNode) getNode(nodeId);
@@ -200,8 +200,8 @@ class JungLocalTrustGraph extends LocalTrustGraph {
             Set<JungLocalTrustGraphNode> discovered =
                     new HashSet<JungLocalTrustGraphNode>();
             for (TrustGraphAdvertisement ad : getMessages()) {
-                LocalTrustGraph.LocalAdvertisement message =
-                        (LocalAdvertisement) ad;
+                BasicTrustGraphAdvertisement message =
+                        (BasicTrustGraphAdvertisement) ad;
                 TrustGraphNodeId id = new BasicTrustGraphNodeId(message.getPayload());
                 JungLocalTrustGraphNode node =
                     (JungLocalTrustGraphNode) tg.getNode(id);
@@ -230,8 +230,8 @@ class JungLocalTrustGraph extends LocalTrustGraph {
                 (JungLocalTrustGraphNode) n;
                 
             if (node.getType() == NodeType.UNCENSORED) {
-                LocalTrustGraph.LocalAdvertisement message = 
-                    new LocalTrustGraph.LocalAdvertisement(node.getId(), 
+                BasicTrustGraphAdvertisement message =
+                    new BasicTrustGraphAdvertisement(node.getId(),
                         node.getId().toString(), 0);
                 node.advertiseSelf(message);
             }
